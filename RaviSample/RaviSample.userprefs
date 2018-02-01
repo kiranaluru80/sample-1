@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{9B87D511-8AB5-4C13-88C9-64AF23D4F38E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/CustomPicker_iOS.cs">
+    <Files>
+      <File FileName="RaviSample/RaviSamplePage.xaml" Line="80" Column="1" />
+      <File FileName="RaviSample/RaviSamplePage.xaml.cs" Line="31" Column="54" />
+      <File FileName="RaviSample/CustomPicker.cs" Line="9" Column="6" />
+      <File FileName="iOS/CustomPicker_iOS.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Droid/RaviSample.Droid.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.RaviSample.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.516B307A-09C5-4B58-8608-A7464319830A">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.RaviSample.iOS>
+</Properties>

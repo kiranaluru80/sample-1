@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:RaviSample"
+    x:Class="RaviSample.RaviSamplePage">
+    <RelativeLayout VerticalOptions="FillAndExpand" BackgroundColor = "Transparent">
+        <StackLayout RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width,Factor=1.0}" RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height,Factor=1.0}" Spacing="0" VerticalOptions="FillAndExpand" Padding ="20,40,20,20">
+            <ScrollView>
+           <StackLayout Spacing ="10" HorizontalOptions ="FillAndExpand" VerticalOptions ="FillAndExpand" Orientation ="Vertical">
+              <!-- Major Group -->
+                <StackLayout Spacing ="5" HorizontalOptions ="FillAndExpand" VerticalOptions ="Start" Orientation ="Vertical" >
+                    <StackLayout Orientation ="Horizontal" HorizontalOptions ="FillAndExpand">
+                        <Label Text ="Major group *" FontSize ="13" TextColor ="Gray" FontAttributes ="Bold"/>
+                        <Label Text ="* Required field" HorizontalOptions ="EndAndExpand" FontSize ="13" TextColor ="Gray" FontAttributes ="Bold"/>
+                    </StackLayout>
+                    <Frame Padding ="5" CornerRadius ="0" OutlineColor ="Silver" HasShadow ="false">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                          <local:CustomPicker Title ="Select Major group" x:Name ="majorGroupPicker" HorizontalOptions ="FillAndExpand"/>
+                          <Image BackgroundColor ="Red" HorizontalOptions ="End" HeightRequest ="30" WidthRequest ="30"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+              <!--End Major Group -->  
+
+                <!-- Organization Group -->
+                <StackLayout Margin ="0,10,0,0" Spacing ="5" HorizontalOptions ="FillAndExpand" VerticalOptions ="Start" Orientation ="Vertical" >
+                    <StackLayout Orientation ="Horizontal" HorizontalOptions ="FillAndExpand">
+                        <Label Text ="Organization *" FontSize ="13" TextColor ="Gray" FontAttributes ="Bold"/>
+                    </StackLayout>
+                    <Frame Padding ="5" CornerRadius ="0" OutlineColor ="Silver" HasShadow ="false">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                          <local:CustomPicker Title ="Select Organization" x:Name ="organizationPicker" HorizontalOptions ="FillAndExpand"/>
+                          <Image BackgroundColor ="Red" HorizontalOptions ="End" HeightRequest ="30" WidthRequest ="30"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+              <!--End Organization Group -->
+
+                <!-- JSSE user Group -->
+                <StackLayout Margin ="0,10,0,0" Spacing ="5" HorizontalOptions ="FillAndExpand" VerticalOptions ="Start" Orientation ="Vertical" >
+                    <StackLayout Orientation ="Horizontal" HorizontalOptions ="FillAndExpand">
+                        <Label Text ="JSSE user group *" FontSize ="13" TextColor ="Gray" FontAttributes ="Bold"/>
+                    </StackLayout>
+                    <Frame Padding ="5" CornerRadius ="0" OutlineColor ="Silver" HasShadow ="false">
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                          <local:CustomPicker Title ="Select JSSE user"  x:Name ="jsseUserPicker" HorizontalOptions ="FillAndExpand"/>
+                          <Image BackgroundColor ="Red" HorizontalOptions ="End" HeightRequest ="30" WidthRequest ="30"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+              <!--End JSSE user Group -->
+
+                <!-- Description -->
+                <StackLayout Margin ="0,10,0,0" Spacing ="5" HorizontalOptions ="FillAndExpand" VerticalOptions ="Start" Orientation ="Vertical" >
+                    <StackLayout Orientation ="Horizontal" HorizontalOptions ="FillAndExpand">
+                        <Label Text ="Description" FontSize ="13" TextColor ="Gray" FontAttributes ="Bold"/>
+                    </StackLayout>
+                    <Frame Padding ="5" CornerRadius ="0" OutlineColor ="Silver" HasShadow ="false">
+                        <Editor HorizontalOptions ="FillAndExpand" VerticalOptions ="Fill" HeightRequest ="100"/>
+                    </Frame>
+                </StackLayout>
+              <!--End Description -->
+
+                 <!-- Buttons -->
+                <StackLayout Margin ="0,10,0,0" Spacing ="10" HorizontalOptions ="FillAndExpand" VerticalOptions ="Start" Orientation ="Horizontal" >
+                    <StackLayout  BackgroundColor ="Gray" Orientation ="Horizontal" HorizontalOptions ="FillAndExpand">
+                      <Button FontAttributes ="Bold" HorizontalOptions ="FillAndExpand" Text ="Reset" TextColor ="Silver"/>
+                    </StackLayout>
+                    <StackLayout BackgroundColor ="Aqua" Orientation ="Horizontal" HorizontalOptions ="FillAndExpand">
+                      <Button FontAttributes ="Bold" HorizontalOptions ="FillAndExpand" Text ="Reset" TextColor ="Silver"/>
+                    </StackLayout>
+                </StackLayout>
+              <!--End buttons -->
+                
+           </StackLayout>
+                </ScrollView>
+           </StackLayout>
+        </RelativeLayout>
+</ContentPage>
